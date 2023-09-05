@@ -1,6 +1,6 @@
 # Internet Computer Protocol NNS Governance System Database
 
-![ICP NNS DB Diagram](icp-nns-db.drawio.png)
+<img src="icp-nns-db.drawio.png" alt="ICP NNS DB Diagram" width="50%"/>
 ## Summary Description
 
 The **Internet Computer Protocol NNS Governance System Database** repository offers a holistic framework for establishing and managing a database-centric development environment. Inside the code folder, users can find tools to seamlessly set up their local environment, fetch data from the Internet Computer blockchain, handle automatic data updates and potential query failures, save data in various standard formats, and establish databases using diverse systems like SQLite, MySQL, and PostgreSQL. Additionally, the data folder contains both raw and processed data files in formats such as CSV, pickle, and JSON, all managed efficiently through Git Large File Storage (LFS). This repository not only provides guidance on setting up using `pipenv` and various database options but also places a spotlight on leveraging Git LFS and a dedicated section on Kaggle's Data Explorer for the Internet Computer Protocol NNS Proposals dataset, complete with a demo notebook to jumpstart data analysis projects.

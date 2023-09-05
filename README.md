@@ -1,12 +1,10 @@
 # Internet Computer Protocol NNS Governance System Database
-
 ## Environment Setup
-
 ### Prerequisites
 
 This project utilizes [`pipenv`](https://pipenv.pypa.io/en/latest/) for package management. Ensure you have it installed and set up correctly by following the steps below. 
 
-> **Tip**: We recommend using the ChatGPT code interpreter for debugging purposes.
+> **Tip**: We recommend using the [ChatGPT code interpreter](https://www.openai.com/chatgpt) for debugging purposes.
 
 ### Installation and Setup
 
@@ -49,34 +47,82 @@ The project can be configured to use various database management systems. For ea
     - **Description**: SQLite is a C-language library that provides a lightweight, serverless, self-contained SQL database engine. 
     - **Use Cases**: Ideal for small to medium-sized applications, prototypes, or when a minimal setup with no configuration is preferred.
     - **Local Management Tools**:
-        - **DB Browser for SQLite**: A high-quality, visual tool to create, design, and edit SQLite database files.
-        - **SQLiteStudio**: A SQLite database manager with intuitive interface, all tools and features bundled together.
-    - **Cloud Hosting Options**: Given SQLite's serverless and embedded nature, it is less common to see dedicated cloud-hosting solutions. Instead, SQLite databases are typically embedded within applications hosted on cloud platforms like AWS, Azure, or Google Cloud.
+        - **DB Browser for SQLite**: A high-quality, visual tool to create, design, and edit SQLite database files. [Website](https://sqlitebrowser.org/)
+        - **SQLiteStudio**: A SQLite database manager with an intuitive interface, all tools and features bundled together. [Website](https://sqlitestudio.pl/)
+    - **Cloud Hosting Options**: Given SQLite's serverless and embedded nature, it is less common to see dedicated cloud-hosting solutions. Instead, SQLite databases are typically embedded within applications hosted on cloud platforms like [AWS](https://aws.amazon.com/), [Azure](https://azure.microsoft.com/), or [Google Cloud](https://cloud.google.com/).
 
 2. **MySQL**:
     - **Description**: MySQL is an open-source relational database system known for its speed and reliability.
     - **Use Cases**: Suitable for a wide range of applications, especially web applications.
     - **Local Management Tools**:
-        - **MySQL Workbench**: A unified visual tool for database architects, developers, and DBAs, providing SQL development, data modeling, and comprehensive administration tools.
-        - **phpMyAdmin**: A free software tool written in PHP, offering a web interface for MySQL administration.
+        - **MySQL Workbench**: A unified visual tool for database architects, developers, and DBAs. [Website](https://www.mysql.com/products/workbench/)
+        - **phpMyAdmin**: A free software tool written in PHP, offering a web interface for MySQL administration. [Website](https://www.phpmyadmin.net/)
     - **Cloud Hosting Options**:
-        - **Amazon RDS (MySQL)**: Managed relational database service by AWS that supports MySQL.
-        - **Google Cloud SQL for MySQL**: Fully-managed MySQL service by Google Cloud.
-        - **Azure Database for MySQL**: Managed MySQL services provided by Microsoft Azure.
+        - **Amazon RDS (MySQL)**: Managed relational database service by AWS that supports MySQL. [Website](https://aws.amazon.com/rds/mysql/)
+        - **Google Cloud SQL for MySQL**: Fully-managed MySQL service by Google Cloud. [Website](https://cloud.google.com/sql/docs/mysql)
+        - **Azure Database for MySQL**: Managed MySQL services provided by Microsoft Azure. [Website](https://azure.microsoft.com/services/mysql/)
 
 3. **PostgreSQL**:
     - **Description**: PostgreSQL is an open-source relational database that focuses on extensibility and compliance with SQL standards.
     - **Use Cases**: Ideal for complex applications requiring advanced data types or geospatial support.
     - **Local Management Tools**:
-        - **pgAdmin**: The most popular administration and management tool for the PostgreSQL database.
-        - **DBeaver**: Free multi-platform database tool for developers and database administrators that supports PostgreSQL.
+        - **pgAdmin**: The most popular administration and management tool for the PostgreSQL database. [Website](https://www.pgadmin.org/)
+        - **DBeaver**: Free multi-platform database tool for developers and database administrators that supports PostgreSQL. [Website](https://dbeaver.io/)
     - **Cloud Hosting Options**:
-        - **Amazon RDS (PostgreSQL)**: AWS's managed service that makes it easy to set up, operate, and scale PostgreSQL deployments.
-        - **Google Cloud SQL for PostgreSQL**: Managed PostgreSQL service offered by Google Cloud.
-        - **Azure Database for PostgreSQL**: Fully managed, enterprise-ready PostgreSQL database service provided by Azure.
+        - **Amazon RDS (PostgreSQL)**: AWS's managed service that makes it easy to set up, operate, and scale PostgreSQL deployments. [Website](https://aws.amazon.com/rds/postgresql/)
+        - **Google Cloud SQL for PostgreSQL**: Managed PostgreSQL service offered by Google Cloud. [Website](https://cloud.google.com/sql/docs/postgres)
+        - **Azure Database for PostgreSQL**: Fully managed, enterprise-ready PostgreSQL database service provided by Azure. [Website](https://azure.microsoft.com/services/postgresql/)
     - **Advanced Options**:
         - **GraphQL Integration**:
             - **Description**: Transform your PostgreSQL database into a GraphQL API without manually defining all resolvers.
             - **Tools**:
-                - **Hasura**: Automatically generates a GraphQL API based on your PostgreSQL schema. Allows for real-time data, remote schemas, and role-based data access.
-                - **PostGraphile**: Instant, highly-performant GraphQL API for your PostgreSQL database. Supports plugins and can handle complex schemas.
+                - **Hasura**: Automatically generates a GraphQL API based on your PostgreSQL schema. Allows for real-time data, remote schemas, and role-based data access. [Website](https://hasura.io/)
+
+
+                - **PostGraphile**: Instant, highly-performant GraphQL API for your PostgreSQL database. Supports plugins and can handle complex schemas. [Website](https://www.graphile.org/postgraphile/)
+
+## Use Git LFS to track and add large files:
+
+1. **Initialize Git LFS**:
+   
+   Before you can use Git LFS, you must initialize it for your repository. This only needs to be done once per repository.
+   
+   ```bash
+   git lfs install
+   ```
+
+2. **Track Files**:
+   
+   You need to tell Git LFS which files to track. This is done using the `git lfs track` command. For example, to track all `.pkl` files, you'd do:
+   
+   ```bash
+   git lfs track "*.pkl"
+   ```
+
+   This command updates the `.gitattributes` file, indicating which file patterns should be managed by LFS.
+
+3. **Add the Files**:
+   
+   Now, add the files to your repository like you would with standard Git. 
+
+   ```bash
+   git add .
+   ```
+
+   Note: This will add all changes. If you want to add specific files, replace the `.` with the specific file paths.
+
+4. **Commit and Push**:
+   
+   Commit your changes:
+
+   ```bash
+   git commit -m "Add large files with Git LFS"
+   ```
+
+   Then push to your remote repository:
+
+   ```bash
+   git push origin main
+   ```
+
+Remember, each time you add a new type of file that you want to be managed by Git LFS, you need to use the `git lfs track` command with the appropriate file pattern. The `git lfs install` command, however, only needs to be run once per repository.

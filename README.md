@@ -1,14 +1,17 @@
 # Internet Computer Protocol NNS Governance System Database
-<table>
+<table width="100%" border="1" cellspacing="0" cellpadding="10">
+    <tr>
+        <td align="center">
+            <img src="icp-nns-db.drawio.png" alt="ICP NNS DB Diagram" width="50%" />
+        </td>
+    </tr>
     <tr>
         <td>
-            <img src="icp-nns-db.drawio.png" alt="ICP NNS DB Diagram" width="100%" />
-        </td>
-        <td>
-            The **Internet Computer Protocol NNS Governance System Database** repository offers a holistic framework for establishing and managing a database-centric development environment. Inside the code folder, users can find tools to seamlessly set up their local environment, fetch data from the Internet Computer blockchain, handle automatic data updates and potential query failures, save data in various standard formats, and establish databases using diverse systems like SQLite, MySQL, and PostgreSQL. Additionally, the data folder contains both raw and processed data files in formats such as CSV, pickle, and JSON, all managed efficiently through Git Large File Storage (LFS). This repository not only provides guidance on setting up using `pipenv` and various database options but also places a spotlight on leveraging Git LFS and a dedicated section on Kaggle's Data Explorer for the Internet Computer Protocol NNS Proposals dataset, complete with a demo notebook to jumpstart data analysis projects.
+            The <b>Internet Computer Protocol NNS Governance System Database</b> repository offers a holistic framework for establishing and managing a database-centric development environment. Inside the code folder, users can find tools to seamlessly set up their local environment, fetch data from the Internet Computer blockchain, handle automatic data updates and potential query failures, save data in various standard formats, and establish databases using diverse systems like SQLite, MySQL, and PostgreSQL. Additionally, the data folder contains both raw and processed data files in formats such as CSV, pickle, and JSON, all managed efficiently through Git Large File Storage (LFS). This repository not only provides guidance on setting up using <code>pipenv</code> and various database options but also places a spotlight on leveraging Git LFS and a dedicated section on Kaggle's Data Explorer for the Internet Computer Protocol NNS Proposals dataset, complete with a demo notebook to jumpstart data analysis projects.
         </td>
     </tr>
 </table>
+
 
 
 ## Table of Contents

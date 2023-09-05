@@ -126,3 +126,44 @@ The project can be configured to use various database management systems. For ea
    ```
 
 Remember, each time you add a new type of file that you want to be managed by Git LFS, you need to use the `git lfs track` command with the appropriate file pattern. The `git lfs install` command, however, only needs to be run once per repository.
+
+---
+
+## Data Explorer on Kaggle
+
+### Overview
+
+Kaggle is a renowned platform for data science competitions, public datasets, and knowledge sharing. One such invaluable dataset hosted on Kaggle is related to the Internet Computer Protocol NNS Proposals. The dataset can be accessed via the following link: [ICP NNS Proposals Dataset](https://www.kaggle.com/datasets/sunshineluyaozhang/icp-nns-proposals).
+
+### File Formats
+
+The ICP NNS Proposals data is available in three primary file formats, catering to various analysis and computational needs:
+
+1. **Pickle**:
+    - **Description**: Pickle is a Python-specific binary serialization format. It's efficient for storing Python objects, especially data frames in pandas, but can't be easily read with other programming languages.
+    - **How to Use**: In Python, you can load a pickle file using the pandas library.
+      ```python
+      import pandas as pd
+      data = pd.read_pickle("path_to_file.pkl")
+      ```
+
+2. **JSON (JavaScript Object Notation)**:
+    - **Description**: JSON is a lightweight data-interchange format that is easy for humans to read and write. It's commonly used for configuration files and data exchange between languages with different data structures.
+    - **How to Use**: In Python, the `json` module can be used to load JSON files.
+      ```python
+      import json
+      with open('path_to_file.json', 'r') as file:
+          data = json.load(file)
+      ```
+
+3. **CSV (Comma Separated Values)**:
+    - **Description**: CSV is a plain-text format used for structured data. It's straightforward and supported by many data processing tools, databases, and spreadsheet applications.
+    - **How to Use**: In Python, the CSV can be loaded using the pandas library.
+      ```python
+      import pandas as pd
+      data = pd.read_csv("path_to_file.csv")
+      ```
+
+### Exploring the Data
+
+To dive deep into the dataset and explore its potential, visit the provided Kaggle link. Kaggle offers an interactive environment, called Kaggle Kernels, which allows for in-browser data analysis. This feature is especially handy for those who want to explore the data without downloading it or setting up a local environment.

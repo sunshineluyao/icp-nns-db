@@ -166,4 +166,4 @@ The ICP NNS Proposals data is available in three primary file formats, catering 
 
 ### Exploring the Data
 
-To dive deep into the dataset and explore its potential, visit the provided Kaggle link. Kaggle offers an interactive environment, called Kaggle Kernels, which allows for in-browser data analysis. This feature is especially handy for those who want to explore the data without downloading it or setting up a local environment.
+To dive deep into the dataset and explore its potential, visit the provided Kaggle link. Kaggle offers an interactive environment, called Kaggle Kernels, which allows for in-browser data analysis. This feature is especially handy for those who want to explore the data without downloading it or setting up a local environment. We also provide a demo notebook that can be used as a starting point for your analysis using kaggle kernels [Notebook URL](https://www.kaggle.com/code/sunshineluyaozhang/ic-nns-db-demo).

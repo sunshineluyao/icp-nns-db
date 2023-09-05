@@ -38,6 +38,8 @@ The **Internet Computer Protocol NNS Governance System Database** repository pro
     - [File Formats](#File-Formats)
     - [Exploring the Data](#Exploring-the-Data)
 
+## Environment Setup
+
 ### Prerequisites
 
 This project utilizes [`pipenv`](https://pipenv.pypa.io/en/latest/) for package management. Ensure you have it installed and set up correctly by following the steps below. 

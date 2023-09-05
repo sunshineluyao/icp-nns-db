@@ -12,7 +12,8 @@
     </tr>
 </table>
 
-
+## Acknowledgments:
+We also thank the DFINITY Foundation for their support and guidance throughout the project. We extend our heartfelt gratitude to Zesen Zhuang, whose invaluable contributions during the exploratory phases of this project, particularly in data querying and visualizations. 
 
 ## Table of Contents
 1. **[Environment Setup](#Environment-Setup)**

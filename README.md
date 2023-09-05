@@ -1,5 +1,43 @@
 # Internet Computer Protocol NNS Governance System Database
-## Environment Setup
+
+## Summary Description
+
+The **Internet Computer Protocol NNS Governance System Database** repository provides an organized structure for setting up and managing a development environment, primarily centered around database systems. The repository guides the user through the process of setting up the development environment with `pipenv`, details various database options such as SQLite, MySQL, and PostgreSQL, and their respective local and cloud management tools. Additionally, there's a thorough guide on leveraging Git Large File Storage (LFS) to track and handle larger files, ensuring that repositories remain lightweight and efficient. Lastly, a notable inclusion is the section dedicated to Kaggle's Data Explorer for the Internet Computer Protocol NNS Proposals dataset, detailing the formats available and a link to a demo notebook to kick-start data analysis endeavors.
+
+## Table of Contents
+1. **[Environment Setup](#Environment-Setup)**
+    - [Prerequisites](#Prerequisites)
+    - [Installation and Setup](#Installation-and-Setup)
+
+2. **[Database Options](#Database-Options)**
+    - [SQLite](#SQLite)
+        - Description
+        - Use Cases
+        - Local Management Tools
+        - Cloud Hosting Options
+    - [MySQL](#MySQL)
+        - Description
+        - Use Cases
+        - Local Management Tools
+        - Cloud Hosting Options
+    - [PostgreSQL](#PostgreSQL)
+        - Description
+        - Use Cases
+        - Local Management Tools
+        - Cloud Hosting Options
+        - Advanced Options
+
+3. **[Use Git LFS to track and add large files](#Use-Git-LFS-to-track-and-add-large-files)**
+    - [Initialize Git LFS](#Initialize-Git-LFS)
+    - [Track Files](#Track-Files)
+    - [Add the Files](#Add-the-Files)
+    - [Commit and Push](#Commit-and-Push)
+
+4. **[Data Explorer on Kaggle](#Data-Explorer-on-Kaggle)**
+    - [Overview](#Overview)
+    - [File Formats](#File-Formats)
+    - [Exploring the Data](#Exploring-the-Data)
+
 ### Prerequisites
 
 This project utilizes [`pipenv`](https://pipenv.pypa.io/en/latest/) for package management. Ensure you have it installed and set up correctly by following the steps below. 

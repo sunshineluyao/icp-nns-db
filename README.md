@@ -218,3 +218,37 @@ The ICP NNS Proposals data is available in three primary file formats, catering 
 ### Exploring the Data
 
 To dive deep into the dataset and explore its potential, visit the provided Kaggle link. Kaggle offers an interactive environment, called Kaggle Kernels, which allows for in-browser data analysis. This feature is especially handy for those who want to explore the data without downloading it or setting up a local environment. We also provide a demo notebook that can be used as a starting point for your analysis using kaggle kernels [Notebook URL](https://www.kaggle.com/code/sunshineluyaozhang/ic-nns-db-demo).
+# Data Dictionary for ICP NNS Governance System Dataset
+
+## About the Dataset
+The Internet Computer Protocol (ICP) operates under a decentralized governance system known as the Network Nervous System (NNS). This dataset provides a comprehensive account of proposals within the NNS, capturing the democratic governance process of the Internet Computer.
+
+## Dataset Variables
+
+| Variable | Definition | Description | Frequency | Range | Unit | Type | Sample Observations |
+|----------|------------|-------------|-----------|-------|------|------|---------------------|
+| `action` | Type of action | Indicates the intent of the proposal (propose, reject, execute) | Per proposal | - | - | String | "ExecuteNnsFunction" |
+| `action_nns_function` | Specific NNS function | Identifies the exact NNS function addressed by the proposal | Per proposal | - | - | String | "NnsCanisterUpgrade" |
+| `deadline_timestamp_seconds` | Voting deadline | Timestamp for the end of the voting period | Per proposal | - | Seconds | Integer | 1620340878 |
+| `decided_timestamp_seconds` | Decision time | Timestamp when the decision on the proposal was made | Per proposal | - | Seconds | Float | 1620340878.0 |
+| `executed_timestamp_seconds` | Execution time | Timestamp when the proposal was executed | Per proposal | - | Seconds | Integer | 0 |
+| `failed_timestamp_seconds` | Failure time | Timestamp when the proposal was deemed unsuccessful | Per proposal | - | Seconds | Integer | 1 |
+| `id` | Proposal identifier | Unique ID for each proposal | Per proposal | 0-104331 | - | Integer | 3 |
+| `known_neurons_ballots` | Voting neurons | Record of neurons that voted | Per proposal | - | - | JSON | `[]` |
+| `latest_tally` | Vote tally | Most recent vote count | Per proposal | - | - | JSON | `{'no': 0, 'yes': 31539577669890139}` |
+| `payload` | Proposal details | Detailed JSON object of the proposal | Per proposal | - | - | JSON | `{...}` |
+| `proposal_id` | Designated proposal ID | ID for the proposal | Per proposal | 0-104331 | - | Integer | 3 |
+| `proposal_timestamp_seconds` | Proposal creation time | Timestamp for the inception of the proposal | Per proposal | - | Seconds | Integer | 1620339017 |
+| `proposer` | Proposer address | Canister address that presented the proposal | Per proposal | - | - | String | "35.0" |
+| `reject_cost_e8s` | Rejection cost | Expense linked to a proposal's rejection | Per proposal | - | e8 ICP units | Integer | 100000000 |
+| `reward_status` | Reward status | Current state of the proposal's reward | Per proposal | - | - | String | "SETTLED" |
+| `settled_at` | Conclusion time | Timestamp marking the proposal's conclusion | Per proposal | - | Date & Time | String | "2021-05-06 16:00:00" |
+| `status` | Proposal status | Current standing of the proposal | Per proposal | - | - | String | "EXECUTED" |
+| `summary` | Proposal overview | Concise overview of the proposal | Per proposal | - | - | String | "Upgrade ledger canister..." |
+| `title` | Proposal title | Headline of the proposal | Per proposal | - | - | String | "Upgrade ledger canister to git commit 8a560f9..." |
+| `topic` | Proposal topic | Primary theme or subject | Per proposal | - | - | String | "TOPIC_NETWORK_CANISTER_MANAGEMENT" |
+| `updated_at` | Last update time | Last moment the proposal received modifications | Per proposal | - | Date & Time | String | "2021-08-05 15:50:43.155180" |
+| `url` | Proposal link | Direct web link to the proposal | Per proposal | - | - | String | "[GitHub Link](https://github.com/dfinity/nns-proposals/...)" |
+
+For detailed information on data generation and updates, visit our GitHub repository which also includes auto-update scheduling provisions for this dataset.
+
